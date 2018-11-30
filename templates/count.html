@@ -1,0 +1,12 @@
+<h1>Counting Site</h1>
+<a href=" {% url 'home' %} ">BACK</a>
+<h3>Your text</h3>
+
+{{fulltext}}<br>
+counted value ={{lwords}}
+<br/><br/>
+<h4>>>List of words with repeated number of values</h4>
+{% for word,value in worddict %}
+{{ word }} = {{ value }}
+<br>
+{% endfor %}
